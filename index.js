@@ -1,28 +1,74 @@
-//express
+/*[process object in nodejs]
+*/
 
+// //code
+// let args=process.argv;
+// console.log(args);
+
+// /*[
+//   '/usr/local/bin/node', // Node.js executable path
+//   '/path/to/app.js',     // Script path
+//   'hello',               // First argument
+//   'world'                // Second argument
+// ]
+// To get only user-passed arguments:
+
+
+// const args = process.argv.slice(2);
+// console.log(args);
+// */
+
+
+
+
+
+/*[module.exports for one file to another]
+
+*/
+//  //code
+// const math=require('./math');
+// console.log(math.add(2,3));
+// console.log(math.sub(2,3));
+// console.log(math.mul(2,3));
+// console.log(math.str);
+
+
+
+
+/*[module.exports for dirtory to file]
+
+*/
+//  //code
+// const fruits=require('./fruits');
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+
+
+
+
+
+/*[NPM node package manager]
+- to install package use syntax npm install package_name.
+to create own package.json file use syntax npm init.
+*/
 //code
-const express = require('express');
-const app = express();//app is object
-const port = 8080;
 
-//app.listen is used to start the server.
-app.listen(port,()=>{
-    console.log(`Server is running on port ${port}`);
-});
 
-// //routing
-// //ek path ke liye ek hi response bhej sakte hai.
-// app.get('/',(req,res)=>{
-//     res.send("This is the response");// it sends response from server
-// }); 
 
-// app.get('/about',(req,res)=>{   
-//     res.send("This is the about page");
-// });
 
-// app.get("*",(req,res)=>{   //for all other routes except above routes use * 
-//     res.send("not found");
-// });
+
+
+
+/*[require vs import in nodejs]
+- require is used to import modules in nodejs.
+- import is used to import modules in es6.means import is used in es6.
+
+
+*/
+// //code: import
+// import {add,sub} from './math.js';
+// console.log(add(2,3));
+// console.log(sub(2,3));
 
 
 
@@ -33,17 +79,10 @@ app.listen(port,()=>{
 
 
 
+/*[]
 
-//path parameters ?????
-
-app.get('/',(req,res)=>{
-    res.send("This is the response");// it sends response from server
-}); 
-
-app.get("/:username/:id",(req,res)=>{
-    console.log(req.params);//it will show request parameters.
-    res.send("hello");
-});
+*/
+// //code
 
 
 
@@ -54,8 +93,95 @@ app.get("/:username/:id",(req,res)=>{
 
 
 
-// //query string 
-// app.get("/search" ,(req,res)=>{
-//     console.log(req.query);//it will show query parameters.
-//     res.send("search page");
-// });
+
+
+/*[]
+
+*/
+// //code
+
+
+
+
+
+
+
+
+
+
+
+
+/*[]
+
+*/
+// //code
+
+
+
+
+
+
+
+
+
+
+
+
+/*[]
+
+*/
+// //code
+
+
+
+
+
+
+
+
+
+
+
+
+/*[]
+
+*/
+// //code
+
+
+
+
+
+
+
+
+
+
+
+
+/*[]
+
+*/
+// //code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
